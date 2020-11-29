@@ -1,0 +1,3 @@
+Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.
+
+SELECT C.CONTINENT, FLOOR(AVG(P.POPULATION)) FROM COUNTRY AS C JOIN CITY AS P ON C.CODE= P.COUNTRYCODE GROUP BY C.CONTINENT;
