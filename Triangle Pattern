@@ -1,0 +1,20 @@
+Draw the triangle pattern
+
+DECLARE @i int = 20
+DECLARE @j int
+DECLARE @k varchar(max)
+
+        WHILE @i > 0
+
+        BEGIN
+            SET @k = ''
+            SET @j = 0
+                WHILE @j < @i
+                BEGIN
+                    SET @k +=  '* '
+                    SET @j = @j + 1
+                END
+                PRINT k
+            SET @i = @i - 1
+
+        END
