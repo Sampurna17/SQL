@@ -1,0 +1,19 @@
+
+DECLARE @i int = 1
+DECLARE @j int
+DECLARE @line varchar(max)
+
+        WHILE @i < 21
+
+        BEGIN
+            SET @line = ''
+            SET @j = 0
+                WHILE @j < @i
+                BEGIN
+                    SET @line +=  '* '
+                    SET @j = @j + 1
+                END
+                PRINT @line
+            SET @i = @i + 1
+
+        END
